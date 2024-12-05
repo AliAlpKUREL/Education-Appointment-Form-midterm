@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         const phoneField = document.getElementById('phone');
         const phoneError = document.getElementById('phoneError');
-        if (!/^[0-9]{3} [0-9]{3} [0-9]{4}$/.test(phoneField.value)) {
+        if (!/^\+90 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}$/.test(phoneField.value)) {
             phoneError.style.visibility = 'visible';
             phoneError.textContent = 'Geçerli bir Türk numarası giriniz.';
             valid = false;
