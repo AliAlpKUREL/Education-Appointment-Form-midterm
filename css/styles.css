@@ -1,4 +1,4 @@
-/* General Body Styling */
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #6c63ff, #007bff);
@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-/* Container for Both Pages */
+
 .container {
     background: white;
     padding: 30px;
@@ -22,7 +22,7 @@ body {
     max-width: 600px;
 }
 
-/* Common Heading */
+
 h1 {
     color: #333;
     margin-bottom: 20px;
@@ -30,7 +30,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Common Paragraphs */
 p {
     margin-bottom: 15px;
     font-size: 1rem;
@@ -53,7 +52,7 @@ button, a {
         background-color: #0056b3;
     }
 
-/* Form Elements */
+
 input, select, textarea {
     width: 100%;
     padding: 12px;
@@ -74,7 +73,7 @@ textarea {
     height: 100px;
 }
 
-/* Footer */
+
 .footer {
     font-size: 0.9rem;
     color: #777;
