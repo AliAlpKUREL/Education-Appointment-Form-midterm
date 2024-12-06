@@ -3,55 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Page</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin-bottom: 10px;
+            }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin: 0 10px;
+            }
+
+                nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+        section.contact-section {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .form-group textarea {
+                resize: vertical;
+            }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #555;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <nav class="sticky-menu">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul id="menu">
-            <li><a href="./home.html">Home page</a></li>
-            <li><a href="./index.html">Form</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="form">
+    <header>
         <h1>Contact Us</h1>
-        <form id="contactForm">
-            <small class="error" id="termsError"></small>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <form action="/submit-contact-form" method="POST">
             <div class="form-group">
-                <label for="name">Name and Surname:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name and surname" required>
-                <small class="error" id="nameError"></small>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
-
-
             <div class="form-group">
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <small class="error" id="emailError"></small>
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" required>
             </div>
-
-
             <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <div class="phone-group">
-                    <input type="text" id="phone" name="phone" placeholder="0555 123 4567" required>
-                </div>
-                <small class="error" id="phoneError"></small>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-
-
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <small class="error" id="messageError"></small>
-            </div>
-
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
