@@ -28,63 +28,63 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('appointmentForm').addEventListener('submit', function (e) {
         e.preventDefault();
         let valid = true;
-    
+
         const errorElements = document.querySelectorAll('.error');
         errorElements.forEach(error => {
             error.style.visibility = 'hidden';
         });
-    
+
         const phoneField = document.getElementById('phone');
         const phoneError = document.getElementById('phoneError');
-        if (!/^\+90 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}$/.test(phoneField.value)) {
+        if (!/^[0-9]{3} [0-9]{3} [0-9]{4}$/.test(phoneField.value)) {
             phoneError.style.visibility = 'visible';
-            phoneError.textContent = 'Geçerli bir Türk numarası giriniz.';
+            phoneError.textContent = 'Please enter a valid Turkish number.';
             valid = false;
         }
-    
+
         const emailField = document.getElementById('email');
         const emailError = document.getElementById('emailError');
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(emailField.value)) {
             emailError.style.visibility = 'visible';
-            emailError.textContent = 'Geçerli bir e-posta adresi giriniz.';
+            emailError.textContent = 'Please enter a valid email address.';
             valid = false;
         }
-    
+
         const nameField = document.getElementById('name');
         const nameError = document.getElementById('nameError');
         if (nameField.value.trim() === '') {
             nameError.style.visibility = 'visible';
-            nameError.textContent = 'Ad ve soyad alanı boş olamaz.';
+            nameError.textContent = 'Name and surname fields cannot be empty.';
             valid = false;
         }
-    
+
         const cityField = document.getElementById('city');
         const cityError = document.getElementById('cityError');
         if (cityField.value === '') {
             cityError.style.visibility = 'visible';
-            cityError.textContent = 'Lütfen bir şehir seçiniz.';
+            cityError.textContent = 'Please select a city.';
             valid = false;
         }
-    
+
         const courseField = document.getElementById('course');
         const courseError = document.getElementById('courseError');
         if (courseField.value === '') {
             courseError.style.visibility = 'visible';
-            courseError.textContent = 'Lütfen bir kurs türü seçiniz.';
+            courseError.textContent = 'Please select a course type.';
             valid = false;
         }
         const termsField = document.getElementById('terms');
         const termsError = document.getElementById('termsError');
         if (!termsField.checked) {
             termsError.style.visibility = 'visible';
-            termsError.textContent = 'Katılım şartlarını kabul etmelisiniz.';
+            termsError.textContent = 'You must accept the terms of participation.';
             valid = false;
         }
-    
+
         if (valid) {
             window.location.href = 'thank-you.html';
         }
     });
-    
+
 });

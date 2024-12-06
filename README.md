@@ -1,26 +1,26 @@
-# Education-Appointment-Form-midterm
+# Education-Appointment-Form-Midterm
 
-# Web Projesi Dökümantasyonu
+## Web Project Documentation
 
-## Proje Tanımı
-Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir web uygulamasıdır. 
-Kullanıcıların çeşitli sayfalara erişebilmesi ve form verilerini göndermesi gibi işlevleri içerir. 
+### Project Description
+This is a web application developed using HTML, CSS, and JavaScript.  
+It enables users to navigate through different pages and submit form data.
 
-## Teknolojiler ve Araçlar
-Proje şu teknolojiler ve araçlar kullanılarak geliştirilmiştir:
-- **HTML**: Sayfa yapıları ve içerik düzenlemeleri için.
-- **CSS**: Sayfaların görsel stil ve düzenlemeleri için.
-- **JavaScript**: Sayfa içi etkileşimler ve dinamik işlemler için.
+### Technologies and Tools
+The project utilizes the following technologies and tools:
+- **HTML**: Used for structuring web pages and organizing content.
+- **CSS**: Used for styling and page layout.
+- **JavaScript**: Used for adding interactivity and dynamic features.
 
-### Dosya Açıklamaları:
-- **thank-you.html**: Form gönderildikten sonra teşekkür mesajı gösteren sayfa.
-- **contact.html**: Kullanıcıların iletişim bilgilerini girmeleri için form içeren sayfa.
-- **home.html**: Web projesinin ana sayfası, projenin amacı ve özelliklerini tanıtır.
-- **index.html**: Projenin ana giriş sayfası, kullanıcının ilk gördüğü sayfadır.
-- **css/style.css**: Projedeki tüm sayfaların stilini düzenleyen ana CSS dosyası.
-- **js/script.js**: Sayfaların etkileşimini sağlayan JavaScript dosyası.
+### File Descriptions
+- **thank-you.html**: Displays a thank-you message after form submission.
+- **contact.html**: Contains a form for users to input their contact details.
+- **home.html**: The homepage of the application, showcasing its purpose and features.
+- **index.html**: The main entry point and landing page of the application.
+- **css/style.css**: The main CSS file for styling all project pages.
+- **js/script.js**: A JavaScript file for handling dynamic interactions.
 
-## Fonksiyonel Özellikler
-- **Form İşlemleri**: Kullanıcılar iletişim formunu doldurduğunda, form verileri toplanır ve teşekkür sayfasına yönlendirilir.
-- **Responsive Tasarım**: Web sayfası, masaüstü, tablet ve mobil cihazlarda düzgün görüntülenmek üzere responsive tasarıma sahiptir.
-- **Dinamik JavaScript Etkileşimleri**: JavaScript, sayfa üzerinde kullanıcı etkileşimlerine yanıt veren dinamik öğeleri kontrol eder.
+### Functional Features
+- **Form Handling**: Users can fill out the contact form, and upon submission, the data is collected and the user is redirected to the thank-you page.
+- **Responsive Design**: Designed to work seamlessly on desktops, tablets, and mobile devices.
+- **Dynamic JavaScript Interactions**: Interactive elements that respond dynamically to user actions.
