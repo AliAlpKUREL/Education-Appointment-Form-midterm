@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const phoneField = document.getElementById('phone');
         const phoneError = document.getElementById('phoneError');
-        if (!/^[0-9]{3} [0-9]{3} [0-9]{4}$/.test(phoneField.value)) {
+        const turkishPhoneRegex = /^(?:\+90|0)?5\d{2} \d{3} \d{2} \d{2}$/;
+
+        if (!turkishPhoneRegex.test(phoneField.value)) {
             phoneError.style.visibility = 'visible';
             phoneError.textContent = 'Please enter a valid Turkish number.';
             valid = false;
