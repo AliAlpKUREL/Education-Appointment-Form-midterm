@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+       
         body {
             display: flex;
             justify-content: center;
@@ -14,14 +14,51 @@
             margin: 0;
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            flex-direction: column; 
         }
 
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000; 
+        }
+
+        .sticky-menu {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+            .sticky-menu li {
+                margin: 0 20px;
+            }
+
+            .sticky-menu a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+                .sticky-menu a:hover {
+                    text-decoration: underline;
+                }
+
+        
         p {
             font-size: 36px;
             font-weight: bold;
             color: #333;
+            margin-top: 80px; 
         }
 
+        
         footer {
             position: fixed;
             bottom: 0;
@@ -34,6 +71,8 @@
     </style>
 </head>
 <body>
+
+   
     <header>
         <nav class="sticky-menu">
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -44,9 +83,14 @@
             </ul>
         </nav>
     </header>
+
+    
     <p>HOŞGELDİNİZ</p>
+
+    
     <footer>
         <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
