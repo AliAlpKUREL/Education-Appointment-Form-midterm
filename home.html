@@ -29,27 +29,39 @@
         }
 
         .sticky-menu {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
+            padding: 10px;
         }
 
+            .sticky-menu ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+
             .sticky-menu li {
-                margin: 0 20px;
+                padding: 10px 20px;
             }
 
             .sticky-menu a {
-                color: white;
                 text-decoration: none;
-                font-size: 18px;
+                color: white;
             }
 
-                .sticky-menu a:hover {
-                    text-decoration: underline;
-                }
+            .sticky-menu ul {
+                display: flex;
+            }
 
+                .sticky-menu ul.collapsed {
+                    display: none;
+                }
         
         p {
             font-size: 36px;
