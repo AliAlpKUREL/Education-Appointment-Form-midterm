@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <style>
-        /* General styling */
+       
         * {
             margin: 0;
             padding: 0;
@@ -107,14 +107,16 @@
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
+
+        <nav class="sticky-menu">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="menu">
+                <li><a href="./home.html">Home page</a></li>
+                <li><a href="./index.html">Form</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+        <h1>Contact Us</h1>
     </header>
 
     <section class="contact-section">
