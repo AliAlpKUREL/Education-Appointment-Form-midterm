@@ -17,30 +17,30 @@ body {
     padding: 10px;
 }
 
-    .sticky-menu ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
+.sticky-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
-    .sticky-menu li {
-        padding: 10px 20px;
-    }
+.sticky-menu li {
+    padding: 10px 20px;
+}
 
-    .sticky-menu a {
-        text-decoration: none;
-        color: white;
-    }
+.sticky-menu a {
+    text-decoration: none;
+    color: white;
+}
 
-    .sticky-menu ul {
-        display: flex;
-    }
+.sticky-menu ul {
+    display: flex;
+}
 
-        .sticky-menu ul.collapsed {
-            display: none;
-        }
+.sticky-menu ul.collapsed {
+    display: none;
+}
 
 .background-container {
     position: absolute;
@@ -58,7 +58,7 @@ section#form {
     padding: 20px;
     max-width: 600px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2); 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     color: #fff;
@@ -80,10 +80,10 @@ input, select {
     transition: border-color 0.3s ease;
 }
 
-    input:focus, select:focus {
-        border-color: #007bff;
-        outline: none;
-    }
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
 
 button {
     width: 100%;
@@ -96,9 +96,9 @@ button {
     font-size: 16px;
 }
 
-    button:hover {
-        background-color: #0056b3;
-    }
+button:hover {
+    background-color: #0056b3;
+}
 
 .sticky-ad {
     position: fixed;
@@ -115,12 +115,11 @@ button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease;
 }
-
-    .sticky-ad img {
-        width: 100%;
-        height: auto;
-        border-radius: 1%;
-    }
+.sticky-ad img {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+}
 
 button#closeAd {
     position: absolute;
@@ -137,9 +136,9 @@ button#closeAd {
     font-size: 18px;
 }
 
-    button#closeAd:hover {
-        background: darkred;
-    }
+button#closeAd:hover {
+    background: darkred;
+}
 
 small.error {
     color: red;
@@ -157,12 +156,12 @@ small.error {
         display: none;
     }
 
-        .sticky-menu ul.show {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+    .sticky-menu ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
     section#form {
         margin: 20vh 10px;
@@ -213,164 +212,3 @@ small.error {
         z-index: 1000;
     }
 }
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #007bff, #6c63ff);
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.form-container {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
-    padding: 2rem;
-}
-
-    .form-container h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 1.5rem;
-    }
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-    .form-group label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        color: #555;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1rem;
-        transition: border-color 0.3s;
-    }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #007bff;
-            outline: none;
-        }
-
-    .form-group textarea {
-        resize: none;
-        height: 100px;
-    }
-
-.submit-btn {
-    width: 100%;
-    padding: 0.8rem;
-    background: #007bff;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-    .submit-btn:hover {
-        background: #0056b3;
-    }
-
-.form-footer {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #777;
-}
-
-    .form-footer a {
-        color: #007bff;
-        text-decoration: none;
-    }
-
-        .form-footer a:hover {
-            text-decoration: underline;
-        }
-
-@media (max-width: 480px) {
-    .form-container {
-        padding: 1.5rem;
-    }
-}
-/*thanksyoupage*/
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #6c63ff, #007bff);
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-
-.thank-you-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-    font-size: 18px;
-}
-
-    
-    .thank-you-container h1 {
-        color: #333;
-        margin-bottom: 20px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-   
-    .thank-you-container p {
-        margin-bottom: 15px;
-        font-size: 1rem;
-        color: #555;
-    }
-
-   
-    .thank-you-container a {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
-    }
-
-        .thank-you-container a:hover {
-            background-color: #0056b3;
-        }
-
-    /* Image Styling */
-    .thank-you-container img {
-        margin-top: 20px;
-        width: 100px;
-        height: auto;
-        border-radius: 50%;
-    }
